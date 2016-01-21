@@ -52,11 +52,12 @@ Homebrew is a popular repository for 1000s of OS X applications like Node.js, Mo
 1. Open Terminal 
 2. Install Watchman by running: `brew install watchman`
 3. Install React Native CLI by running: `sudo npm install react-native-cli -g` 
-4. Install `forceios` tool by running: `sudo install forceios -g` 
 
 
 	> <a href="https://facebook.github.io/watchman/" target="_blank">Watchman</a> file watching is used to by React Native to monitor development changes and instantly convert them to a Native app. 
 	
+	
+
 ## Additional Resources
 
 - <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> Contains the everything you need to build React Native apps.
