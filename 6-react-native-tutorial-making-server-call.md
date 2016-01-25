@@ -4,16 +4,16 @@ layout: module
 # 3. Making Server Call
 In this module you'll learn about how to use `fetch` api to make external calls.
 
+In addition, you'll learn how React Native **states** work and how to use **TextInput, TouchableHighlight and ActivityIndicatorIOS** components. 
+
+1. TextInput - This is similar to an Input field in a web application.
+2. TouchableHighlight - This is similar to a button.
+3. ActivityIndicatorIOS - This is similar to a busy spinner.
 
 ## fetch API
 React Native uses a library called `fetch` to make AJAX calls to the server. `fetch` library is similar to other AJAX libraries and is now supported out of the box in latest Chrome browsers.
 <img search-cmp-2>
 
-Specifically, you'll learn how React Native **states** work and also learn how to use TextInput, TouchableHighlight and ActivityIndicatorIOS. 
-
-1. TextInput - This is similar to an Input field in a web application.
-2. TouchableHighlight - This is similar to a button.
-3. ActivityIndicatorIOS - This is similar to a busy spinner.
 
 #### States
 States in React components is simply a way to keep track of some data(think JSON or string) once that component is initialized. For example: In the below example, we need to keep track of `count` once the component is initialized. And everytime you want to change the component's data (may be to display something new), you simply update it's state by using `this.setState`. Then React automatically rerenders the component with the new data.  
@@ -55,13 +55,13 @@ It's similar to a button. It takes the following properties (among many others):
 	```
 5. handleSubmit Callback - When the user presses the button, we need to show loading spinner, fetch results from stackoverflow, show result screen
 
-```
- handleSubmit(){
-    //1.  update our indicatorIOS spinner
-    //2.  fetch data from Stackoverflow
-    //3. navigate to the next results view
-     }
-```
+	```
+	 handleSubmit(){
+	    //1.  update our indicatorIOS spinner
+	    //2.  fetch data from Stackoverflow
+	    //3. navigate to the next results view
+	     }
+	```
 
 
   
@@ -78,7 +78,7 @@ It's similar to an input field. It takes the following properties (among many ot
 	        value={this.state.username}
 	        onChange={this.handleChange.bind(this)} />
 	```
-4. handleChange Callback - When the user types letters, we need to listen to the keystrokes and update the state. Note that the `event` property will contain the text entered by the user.
+4. handleChange Callback - When the user types letters, we need to listen to the keystrokes and update the state. Note that the `event` parameter will contain the text entered by the user.
 
 	```
   handleChange(event){
